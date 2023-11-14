@@ -1,0 +1,75 @@
+*{
+    margin:0;
+    padding:0;
+}
+body {
+    background-color: rgb(243, 226, 202);
+    font-family: 'Playfair Display', serif;
+}
+h1{
+    font-family: normal;
+    font-size: 2.5rem;
+    color: rgb(127, 31, 31);
+    
+}
+
+h2{
+    font-family:'Playfair Display', serif;
+    color: rgb(127, 31, 31);
+}
+.menu li{
+    display: inline-block;
+}
+.menu li a{
+    padding: 2px;
+    margin: 2px;
+    color: black;
+}
+.menu li a:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(305, 204, 130);
+    border-radius: 20px;
+
+}
+.contacto{
+    font-family: none;
+    color: black;
+}
+
+
+
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1.5fr;
+    grid-template-rows: 0,7fr 1fr 1fr 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: 
+    "header header header"
+    "section-a section-a aside"
+    "section-b section-b aside"
+    "footer footer footer";
+}
+.header{
+    grid-area: header;
+    background-color: rgb(205,164,110);
+}
+.section-a{
+    grid-area: section-a;
+    background-color: rgb(243, 226, 202);
+}
+.section-b{
+    grid-area: section-b;
+    background-color: rgb(243, 226, 202);
+}
+.aside{
+    grid-area: aside;
+    background-color: rgb(245, 221, 187);
+}
+.footer{
+    grid-area: footer;
+    background-color: rgb(245, 221, 187);
+}

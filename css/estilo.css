@@ -2,19 +2,38 @@
     margin:0;
     padding:0;
 }
+.container-fluid{
+    padding: 0;
+    height: 100vh;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1.5fr;
+    grid-template-rows: 0,7fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: 
+    "header "
+    "main "
+    "footer";
+}
+header{
+    grid-area: header;
+    background-color: rgb(205,164,110);
+}
+section{
+    grid-area: main;
+    background-color: rgb(243, 226, 202);
+}
+footer{
+    grid-area: footer;
+    background-color: rgb(245, 221, 187);
+}
 body {
     background-color: rgb(243, 226, 202);
-    font-family: 'Playfair Display', serif;
 }
-h1{
-    font-family: normal;
-    font-size: 2.5rem;
-    color: rgb(127, 31, 31);
-    
-}
-
-h2{
-    font-family:'Playfair Display', serif;
+.titulos{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(127, 31, 31);
 }
 .menu li{
@@ -35,41 +54,16 @@ h2{
     font-family: none;
     color: black;
 }
+.carousel{
+    width: 20vw;
+    height: auto;
+}
+.galeri li{
+    display: inline-block;
+}
+.galeri li:hover padding{
+    background-color: black;
+    border-radius: 40px;
+}
 
 
-
-
-.container{
-    height: 100vh;
-    width: 100vw;
-    display: grid;
-    grid-template-columns: 1.5fr 1.5fr 1.5fr;
-    grid-template-rows: 0,7fr 1fr 1fr 0.5fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas: 
-    "header header header"
-    "section-a section-a aside"
-    "section-b section-b aside"
-    "footer footer footer";
-}
-.header{
-    grid-area: header;
-    background-color: rgb(205,164,110);
-}
-.section-a{
-    grid-area: section-a;
-    background-color: rgb(243, 226, 202);
-}
-.section-b{
-    grid-area: section-b;
-    background-color: rgb(243, 226, 202);
-}
-.aside{
-    grid-area: aside;
-    background-color: rgb(245, 221, 187);
-}
-.footer{
-    grid-area: footer;
-    background-color: rgb(245, 221, 187);
-}

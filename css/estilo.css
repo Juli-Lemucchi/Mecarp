@@ -29,12 +29,52 @@ footer{
     grid-area: footer;
     background-color: rgb(245, 221, 187);
 }
+
+.container2-fluid{
+    padding: 0;
+    height: 100vh;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: 
+    "header2 header2"
+    "main2 img2"
+    "footer2 footer2"; 
+}
+.header2{
+    grid-area: header2;
+    background-color: rgb(205,164,110);
+}
+.main2{
+    grid-area: main2;
+}
+.img2{
+    grid-area: img2;
+}
+.footer2{
+    grid-area: footer2;
+    background-color: rgb(245, 221, 187);
+}
+
+
 body {
     background-color: rgb(243, 226, 202);
 }
 .titulos{
+    margin-left: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: rgb(127, 31, 31);
+    color: rgb(145, 37, 37);
+}
+.subtitulos{
+    margin-left: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(95, 23, 6);
+    font-style:oblique;
+    text-decoration: underline;
 }
 .menu li{
     display: inline-block;
@@ -61,9 +101,17 @@ body {
 .galeri li{
     display: inline-block;
 }
-.galeri li:hover padding{
+.galeri li:hover{
     background-color: black;
     border-radius: 40px;
 }
-
+li{
+    list-style-type: none;
+}
+.imgnoso{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
 

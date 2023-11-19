@@ -2,37 +2,41 @@
     margin:0;
     padding:0;
 }
+/* contenedor pantalla principal*/
 .container-fluid{
     padding: 0;
-    height: 100vh;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     display: grid;
-    grid-template-columns: 1.5fr;
-    grid-template-rows: 0,7fr 1fr 1fr;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 60% 20%;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas: 
-    "header "
-    "main "
+    "header"
+    "main"
     "footer";
 }
 header{
     grid-area: header;
     background-color: rgb(205,164,110);
+    width: 100%;
 }
-section{
+main{
     grid-area: main;
     background-color: rgb(243, 226, 202);
+    width: 100%;
 }
 footer{
     grid-area: footer;
     background-color: rgb(245, 221, 187);
+    width: 100%;
+    position: relative;
+    overflow: hidden;
 }
-
+/* Contenedor pages nosotros*/
 .container2-fluid{
     padding: 0;
-    height: 100vh;
     height: 100vh;
     width: 100vw;
     display: grid;
@@ -59,8 +63,28 @@ footer{
     grid-area: footer2;
     background-color: rgb(245, 221, 187);
 }
-
-
+/*Contenedor carrousel de trabajos*/
+.containerG-fluid{
+    height: 100%;
+    width: 100%;
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    
+    grid-template-areas: 
+    "carro1 carro2 carro3"; 
+}
+.carro1 { 
+    grid-area: carro1;
+    width: 100%; }
+.carro2 { grid-area: carro2; 
+    width: 100%;
+}
+.carro3 { grid-area: carro3;
+    width: 100%;
+}
+/*Fin de containers*/
 body {
     background-color: rgb(243, 226, 202);
 }
@@ -76,6 +100,7 @@ body {
     font-style:oblique;
     text-decoration: underline;
 }
+/*Menu general*/
 .menu li{
     display: inline-block;
 }
@@ -90,23 +115,29 @@ body {
     border-radius: 20px;
 
 }
+/*Fin del menu*/
+/*Footer general*/
 .contacto{
     font-family: none;
     color: black;
 }
+.ending li{
+    display: inline-block;
+    color: black;
+}
+.ending li a{
+    color: black;
+}
+/*Fin de footer*/
 .carousel{
     width: 20vw;
     height: auto;
 }
-.galeri li{
-    display: inline-block;
-}
-.galeri li:hover{
-    background-color: black;
-    border-radius: 40px;
-}
 li{
     list-style-type: none;
+}
+.linkvermas{
+    color: black;
 }
 .imgnoso{
     margin-top: 30px;
@@ -114,4 +145,31 @@ li{
     display: flex;
     justify-content: center;
 }
+@media screen and (max-width: 780px) {
+    .containerG-fluid{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "carro1 carro2"
+        "carro3 none";
+    }
+    .carousel-inner{
+        width: 250px;
+    }
+}
 
+@media screen and (max-width: 480px) {
+    .containerG-fluid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "carro1"
+        "carro2"
+        "carro3";
+    }
+    .carousel-inner{
+        width: 250px;
+        margin: 20px;
+    }
+    
+}

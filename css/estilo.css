@@ -165,19 +165,6 @@ li{
     .carousel-inner{
         width: 250px;
     }
-    .containerN{
-        grid-template-columns: 100%;
-        grid-template-rows: auto;
-        grid-gap: 1rem;
-        grid-template-areas: 
-        "text1"
-        "img_1"
-        "text2"
-        "img_2"
-        "text3"
-        "img_3";
-    }
-
 }
 
 @media screen and (max-width: 550px) {

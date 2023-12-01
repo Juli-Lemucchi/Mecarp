@@ -1,0 +1,98 @@
+@import "containers";
+@import "variables";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    header{
+        .titulos{
+                display: flex;
+                justify-content: center;
+                color: $titulos;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                margin-left: 10px;
+            }
+        }
+        .menu{
+            ul{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-evenly;
+                .ubiactual{
+                    color: white;
+                    border-radius:10px;
+                    background-color:$subtitulos;
+                }
+                li {
+                    list-style-type: none ;
+                    a{
+                        padding: 10px;
+                        margin: 2px;
+                        color: $text;
+                        &:hover{
+                            color: white;
+                            border-radius:10px;
+                            background-color:$subtitulos;
+                        }
+                    }
+                }
+            }           
+        }
+    main{
+        .infoPrincipal{
+            color: $text;
+        }
+
+        .subtitulos{
+            color: $subtitulos;
+            margin-left: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-style:oblique;
+            text-decoration: underline;
+        }
+        li{
+            list-style-type: none;
+        }
+        .linkvermas{
+            display:flex;
+            justify-content: center;
+            color: black;
+            font-size:large;
+        }
+    }
+
+    footer{
+        .contacto{
+            font-family: none;
+            color:$text;
+            .subtitulos{
+                color: $subtitulos;
+            }
+        }
+        .ending{
+            .ubiactual{
+                color: white;
+                border-radius:10px;
+                background-color:$subtitulos;
+            }
+            li {
+                list-style-type: none ;
+                a{
+                    padding: 10px;
+                    margin: 10px;
+                    line-height: 2.5;
+                    color: $text;
+                    &:hover{
+                        color: white;
+                        border-radius:10px;
+                        background-color:$subtitulos;
+                    }
+                }
+            }
+        }
+    }
+}

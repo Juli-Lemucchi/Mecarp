@@ -224,4 +224,47 @@ body main .info3 span {
   font-weight: bold;
 }
 
+/*Cosas especificas de materiales.html*/
+body main h2 {
+  color: #5f1706;
+  margin-left: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: oblique;
+  text-decoration: underline;
+}
+body main .cajas {
+  background-color: #f3e2ca;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+body main .cajas div {
+  margin: 20px;
+  width: 300px;
+  height: 350px;
+  background-color: rgb(233, 186, 147);
+  border: #912525 2px solid;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main .cajas div img {
+  margin: 10px;
+  width: 150px;
+}
+body main .cajas div p {
+  margin: 10px;
+  color: #000000;
+  overflow: auto;
+}
+body main .cajas div p::-webkit-scrollbar {
+  width: 5px;
+  background-color: rgb(233, 186, 147);
+}
+body main .cajas div p::-webkit-scrollbar-thumb {
+  background-color: #912525;
+}
+
 /*# sourceMappingURL=estilo.css.map */

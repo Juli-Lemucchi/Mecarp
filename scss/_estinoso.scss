@@ -1,0 +1,79 @@
+@import "variables";
+body{
+    main{
+        padding: 10px;
+        .info1{
+            p{
+                color: $text;
+                font-size: medium;
+                line-height: 1.5rem;
+                span{
+                    color: $titulos;
+                    font-weight:bold;
+                }
+            }
+        }
+        .fotos1{
+            ul{
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                align-items: center;
+                justify-content: center;
+                li{
+                    .imgnoso1{
+                        
+                        width: 250px;
+                    }
+                    .imgnoso2{
+                        width: 200px;
+                    }
+                }
+                
+            }
+        }
+        .info2{
+            p{
+                margin-top: 10px;
+                color: $text;
+                font-size: medium;
+                line-height: 1.5rem;
+                span{
+                    color: $titulos;
+                    font-weight:bold;
+                }
+            }
+        }
+        .fotos2{
+            ul{
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                align-items: center;
+                justify-content: center;
+                li{
+                    .imgnoso3{
+                        width: 150px;
+                        }
+                    }
+                    .imgnoso4{
+                        width: 300px;
+                    }
+                }
+                
+        }
+        .info3{
+            color: $text;
+            font-size: medium;
+            line-height: 2rem;
+            span{
+                color: $titulos;
+                font-weight:bold;
+            }
+        }
+    }
+}

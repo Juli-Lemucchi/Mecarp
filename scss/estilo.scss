@@ -1,5 +1,8 @@
 @import "containers";
 @import "variables";
+@import "estiindex";
+@import "estinoso";
+@import "estimat";
 
 *{
     margin: 0;
@@ -8,7 +11,7 @@
 }
 body{
     header{
-        .titulos{
+        h1{
                 display: flex;
                 justify-content: center;
                 color: $titulos;
@@ -39,34 +42,13 @@ body{
             }           
         }
     main{
-        .infoPrincipal{
-            p{
-            margin-left: 10px;
-            margin-top: 10px;
-            color: $text;
-            font-size: medium;
-            line-height: 1;
-
-            }
-        }
-
-        .subtitulos{
-            color: $subtitulos;
-            margin-left: 20px;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-style:oblique;
-            text-decoration: underline;
-        }
-        li{
-            list-style-type: none;
-        }
-        .linkvermas{
-            display:flex;
-            justify-content: center;
-            color: black;
-            font-size:large;
-        }
-
+        h2{
+                color: $subtitulos;
+                margin-left: 20px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-style:oblique;
+                text-decoration: underline;
+        } 
     }
     footer{
         .contacto{
@@ -114,125 +96,5 @@ body{
             }
         }
         
-    }
-}
-/*Cosas especificas de nosotros.html*/
-body{
-    main{
-        padding: 10px;
-        .info1{
-            p{
-                color: $text;
-                font-size: medium;
-                line-height: 1.5rem;
-                span{
-                    color: $titulos;
-                    font-weight:bold;
-                }
-            }
-        }
-        .fotos1{
-            ul{
-                padding: 0;
-                margin: 0;
-                display: flex;
-                flex-direction: row;
-                flex-wrap: nowrap;
-                align-items: center;
-                justify-content: center;
-                li{
-                    .imgnoso1{
-                        
-                        width: 200px;
-                    }
-                    .imgnoso2{
-                        width: 150px;
-                    }
-                }
-                
-            }
-        }
-        .info2{
-            p{
-                color: $text;
-                font-size: medium;
-                line-height: 1.5rem;
-                span{
-                    color: $titulos;
-                    font-weight:bold;
-                }
-            }
-        }
-        .fotos2{
-            ul{
-                li{
-                    .imgnoso3{
-                        width: 200px;
-                        }
-                    }
-                }
-                
-        }
-        .info3{
-            color: $text;
-            font-size: medium;
-            line-height: 2rem;
-            span{
-                color: $titulos;
-                font-weight:bold;
-            }
-        }
-    }
-}
-
-/*Cosas especificas de materiales.html*/
-body{
-    main{
-        h2{
-            color: $subtitulos;
-            margin-left: 20px;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-style:oblique;
-            text-decoration: underline;
-
-        }
-        .cajas{
-            background-color: $body;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            div{
-                margin: 20px;
-                width: 300px;
-                height: 350px;
-                background-color: rgb(233, 186, 147);
-                border: $titulos 2px solid;
-                border-radius: 20px; 
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                img{
-                    margin: 10px;
-                    width: 150px;
-                }
-                p{
-                    margin: 10px;
-                    color: $text;
-                    overflow: auto;
-                    &::-webkit-scrollbar{
-                        width: 5px;
-                        background-color:rgb(233, 186, 147);
-                    }
-                    &::-webkit-scrollbar-thumb{
-                        background-color: $titulos;
-                    }
-                }
-            }
-
-        }
-
-
-
     }
 }

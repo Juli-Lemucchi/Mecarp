@@ -86,38 +86,6 @@
   width: 100%;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body header .titulos {
-  display: flex;
-  justify-content: center;
-  color: #912525;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  margin-left: 10px;
-}
-body .menu ul {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
-}
-body .menu ul li {
-  list-style-type: none;
-}
-body .menu ul li a {
-  padding: 10px;
-  margin: 2px;
-  color: #000000;
-}
-body .menu ul .ubiactual {
-  color: white;
-  border-radius: 10px;
-  background-color: #5f1706;
-}
 body main .infoPrincipal p {
   margin-left: 10px;
   margin-top: 10px;
@@ -141,40 +109,14 @@ body main .linkvermas {
   color: black;
   font-size: large;
 }
-body footer .contacto div h2 {
-  color: #5f1706;
-  margin-left: 20px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-style: oblique;
-  text-decoration: underline;
+body main .carousel:hover {
+  transform: scale(1, 1);
 }
-body footer .contacto div ul a {
-  color: #000000;
-  text-decoration: none;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: medium;
-}
-body footer .contacto .ending .ubiactual {
-  color: white;
-  border-radius: 10px;
-  background-color: #5f1706;
-}
-body footer .contacto .ending ul li {
-  list-style-type: none;
-}
-body footer .contacto .ending ul li a {
-  padding: 10px;
-  margin: 10px;
-  line-height: 2.5;
-  color: #000000;
-}
-body footer .contacto .ending ul li a:hover {
-  color: white;
-  border-radius: 10px;
-  background-color: #5f1706;
+body main .carousel:not(:hover) {
+  transform: scale(0.8, 0.8);
+  filter: brightness(0.7);
 }
 
-/*Cosas especificas de nosotros.html*/
 body main {
   padding: 10px;
 }
@@ -197,12 +139,13 @@ body main .fotos1 ul {
   justify-content: center;
 }
 body main .fotos1 ul li .imgnoso1 {
-  width: 200px;
+  width: 250px;
 }
 body main .fotos1 ul li .imgnoso2 {
-  width: 150px;
+  width: 200px;
 }
 body main .info2 p {
+  margin-top: 10px;
   color: #000000;
   font-size: medium;
   line-height: 1.5rem;
@@ -211,8 +154,20 @@ body main .info2 p span {
   color: #912525;
   font-weight: bold;
 }
+body main .fotos2 ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
 body main .fotos2 ul li .imgnoso3 {
-  width: 200px;
+  width: 150px;
+}
+body main .fotos2 ul .imgnoso4 {
+  width: 300px;
 }
 body main .info3 {
   color: #000000;
@@ -224,14 +179,6 @@ body main .info3 span {
   font-weight: bold;
 }
 
-/*Cosas especificas de materiales.html*/
-body main h2 {
-  color: #5f1706;
-  margin-left: 20px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-style: oblique;
-  text-decoration: underline;
-}
 body main .cajas {
   background-color: #f3e2ca;
   display: flex;
@@ -265,6 +212,78 @@ body main .cajas div p::-webkit-scrollbar {
 }
 body main .cajas div p::-webkit-scrollbar-thumb {
   background-color: #912525;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body header h1 {
+  display: flex;
+  justify-content: center;
+  color: #912525;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-left: 10px;
+}
+body .menu ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+body .menu ul li {
+  list-style-type: none;
+}
+body .menu ul li a {
+  padding: 10px;
+  margin: 2px;
+  color: #000000;
+}
+body .menu ul .ubiactual {
+  color: white;
+  border-radius: 10px;
+  background-color: #5f1706;
+}
+body main h2 {
+  color: #5f1706;
+  margin-left: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: oblique;
+  text-decoration: underline;
+}
+body footer .contacto div h2 {
+  color: #5f1706;
+  margin-left: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: oblique;
+  text-decoration: underline;
+}
+body footer .contacto div ul a {
+  color: #000000;
+  text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: medium;
+}
+body footer .contacto .ending .ubiactual {
+  color: white;
+  border-radius: 10px;
+  background-color: #5f1706;
+}
+body footer .contacto .ending ul li {
+  list-style-type: none;
+}
+body footer .contacto .ending ul li a {
+  padding: 10px;
+  margin: 10px;
+  line-height: 2.5;
+  color: #000000;
+}
+body footer .contacto .ending ul li a:hover {
+  color: white;
+  border-radius: 10px;
+  background-color: #5f1706;
 }
 
 /*# sourceMappingURL=estilo.css.map */

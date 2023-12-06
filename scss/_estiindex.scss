@@ -1,0 +1,43 @@
+@import "variables";
+body{
+    main{
+        .infoPrincipal{
+            p{
+            margin-left: 10px;
+            margin-top: 10px;
+            color: $text;
+            font-size: medium;
+            line-height: 1;
+            
+
+            }
+        }
+
+        .subtitulos{
+            color: $subtitulos;
+            margin-left: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-style:oblique;
+            text-decoration: underline;
+        }
+        li{
+            list-style-type: none;
+        }
+        .linkvermas{
+            display:flex;
+            justify-content: center;
+            color: black;
+            font-size:large;
+        }
+       
+        .carousel{
+            &:hover{
+                transform:scale(1,1);
+            }
+            &:not(:hover) {
+                transform: scale(0.8,0.8);
+                filter: brightness(0.7);
+              }
+        }
+    }
+}

@@ -86,6 +86,66 @@
   width: 100%;
 }
 
+.containertra {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr auto;
+  grid-gap: 0px 0px;
+  grid-template-areas: "titu titu titu" "izqui centr dere";
+}
+
+.titu {
+  grid-area: titu;
+  width: 100;
+}
+
+.izqui {
+  grid-area: izqui;
+  width: 100%;
+}
+
+.centr {
+  grid-area: centr;
+  width: 100%;
+}
+
+.dere {
+  grid-area: dere;
+  width: 100%;
+}
+
+form {
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 0px;
+  grid-template-areas: "part1 part2" "part3 part3";
+}
+
+.part1 {
+  grid-area: part1;
+  width: 100%;
+}
+
+.part2 {
+  grid-area: part2;
+  width: 100%;
+}
+
+.part3 {
+  grid-area: part3;
+  width: 100%;
+}
+
 body main .infoPrincipal p {
   margin-left: 10px;
   margin-top: 10px;
@@ -93,7 +153,7 @@ body main .infoPrincipal p {
   font-size: medium;
   line-height: 1;
 }
-body main .subtitulos {
+body main h2 {
   color: #5f1706;
   margin-left: 20px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -109,10 +169,24 @@ body main .linkvermas {
   color: black;
   font-size: large;
 }
-body main .carousel:hover {
+body main .carro1:hover {
   transform: scale(1, 1);
 }
-body main .carousel:not(:hover) {
+body main .carro1:not(:hover) {
+  transform: scale(0.8, 0.8);
+  filter: brightness(0.7);
+}
+body main .carro2:hover {
+  transform: scale(1, 1);
+}
+body main .carro2:not(:hover) {
+  transform: scale(0.8, 0.8);
+  filter: brightness(0.7);
+}
+body main .carro3:hover {
+  transform: scale(1, 1);
+}
+body main .carro3:not(:hover) {
   transform: scale(0.8, 0.8);
   filter: brightness(0.7);
 }
@@ -212,6 +286,116 @@ body main .cajas div p::-webkit-scrollbar {
 }
 body main .cajas div p::-webkit-scrollbar-thumb {
   background-color: #912525;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body main .titu {
+  font-size: xx-large;
+  color: #5f1706;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: oblique;
+  text-decoration: underline;
+  text-align: center;
+}
+body main .carousel {
+  position: sticky;
+  top: 0px;
+}
+body main .izqui .caja1 {
+  padding-top: 40px;
+  position: relative;
+  top: 10px;
+  left: 0px;
+}
+body main .izqui .caja2 {
+  position: relative;
+  top: 10px;
+  left: 100px;
+}
+body main .izqui .caja3 {
+  padding-top: 60px;
+  position: relative;
+  top: 10px;
+  left: 0px;
+}
+body main .izqui .caja4 {
+  padding-bottom: 40px;
+  position: relative;
+  top: 10px;
+  right: -90px;
+}
+body main .izqui .caja5 {
+  padding-top: 10px;
+  padding-bottom: 0px;
+  position: relative;
+  top: 10px;
+  left: -50px;
+}
+body main .izqui .caja6 {
+  padding-top: 0px;
+  padding-bottom: 30px;
+  position: relative;
+  top: 20px;
+  left: 50px;
+}
+body main .izqui .caja7 {
+  padding-top: 30px;
+  position: relative;
+  top: 10px;
+  right: -20px;
+}
+body main .izqui .caja8 {
+  padding: 10px;
+  position: relative;
+  top: 10px;
+  left: 150px;
+}
+body main .dere .caja9 {
+  padding-top: 40px;
+  position: relative;
+  top: -10px;
+  right: -30px;
+}
+body main .dere .caja10 {
+  padding: 10px;
+  position: relative;
+  top: -10px;
+  right: -100px;
+}
+body main .dere .caja11 {
+  padding: 20px;
+  position: relative;
+  top: 10px;
+  right: -100px;
+}
+body main .dere .caja12 {
+  padding-bottom: 40px;
+  position: relative;
+  top: 10px;
+  right: -200px;
+}
+body main .dere .caja13 {
+  padding-top: 10px;
+  padding-bottom: 0px;
+  position: relative;
+  top: -10px;
+  right: -10px;
+}
+body main .dere .caja14 {
+  padding-top: 0px;
+  padding-bottom: 30px;
+  position: relative;
+  top: -20px;
+  right: -100px;
+}
+body main .dere .caja15 {
+  padding-top: 30px;
+  position: relative;
+  top: -10px;
+  left: 20px;
 }
 
 * {

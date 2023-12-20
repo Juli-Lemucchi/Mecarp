@@ -98,35 +98,57 @@
 }
 
 .containertra{
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     height: 100%;
     width: 100%;
     display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr auto ;
     grid-gap: 0px 0px;
-    grid-auto-flow: row;
     grid-template-areas: 
     "titu titu titu"
     "izqui centr dere";
 }
 .titu{
     grid-area: titu;
-    font-size: large;
-    color: $subtitulos;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-style:oblique;
-    text-decoration: underline;
+    width: 100;
 }
 .izqui{
     grid-area: izqui;
-    background-color: aqua;
+    width: 100%;
 }
 .centr{
     grid-area: centr;
-    background-color: blueviolet;
+    width: 100%;
 }
 .dere{
     grid-area: dere;
-    background-color: cadetblue;
+    width: 100%;
+}
+form{
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 0px;
+    grid-template-areas:
+    "part1 part2"
+    "part3 part3";
+}
+.part1{
+    grid-area: part1;
+    width: 100%;
+}
+.part2{
+    grid-area: part2;
+    width: 100%;
+}
+.part3{
+    grid-area: part3;
+    width: 100%;
 }

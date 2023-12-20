@@ -25,18 +25,31 @@
     <main>
         <h2>Contactanos</h2>
         <form>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <div id="emailHelp" class="form-text">No compartiremos tu correo electrónico con nadie más.</div>
-            </div> 
-            <div>
+            <div class="part1">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">No compartiremos tu correo electrónico con nadie más.</div>
+                </div>
+                <div>
+                    <label for="Tipo de mueble">Tipo de mueble</label>
+                    <select name="Tipo de mueble" id="">
+                        <option value="Cocina">Cocina</option>
+                        <option value="Vestidor">Vestidor</option>
+                        <option value="Banitory">Banitory</option>
+                        <option value="Escritorio">Escritorio</option>
+                    </select>
+                </div>
+            </div>     
+            <div class="part2">
                 <label for="comentario">Comentanos la idea principal de tu mueble, cuanto mas detallado mejor.</label>
                 <br>
                 <textarea name="comentario" id="" cols="30" rows="5"></textarea>
             </div>
+            <div class="part3">
             <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
+            </div>
+        </form>
     </main>
     <footer>
         <div class="contacto">

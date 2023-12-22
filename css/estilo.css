@@ -35,7 +35,7 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   grid-auto-flow: row;
-  grid-template-areas: "subtitulos subtitulos" "info1 fotos1" "fotos2 info2" "info3 info3";
+  grid-template-areas: "subtitulos subtitulos" "info1 fotos1" "fotos2 info2";
 }
 .container2-fluid .subtitulos {
   grid-area: subtitulos;
@@ -55,10 +55,6 @@
 }
 .container2-fluid .fotos2 {
   grid-area: fotos2;
-  width: 100%;
-}
-.container2-fluid .info3 {
-  grid-area: info3;
   width: 100%;
 }
 
@@ -86,14 +82,14 @@
   width: 100%;
 }
 
-.containertra {
+.containertra-fluid {
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
   display: grid;
   grid-auto-columns: 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 0.5fr 1fr;
   grid-template-rows: 1fr auto;
   grid-gap: 0px 0px;
   grid-template-areas: "titu titu titu" "izqui centr dere";
@@ -116,33 +112,6 @@
 
 .dere {
   grid-area: dere;
-  width: 100%;
-}
-
-form {
-  padding: 0;
-  height: 100%;
-  width: 100%;
-  display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto 1fr;
-  gap: 0px;
-  grid-template-areas: "part1 part2" "part3 part3";
-}
-
-.part1 {
-  grid-area: part1;
-  width: 100%;
-}
-
-.part2 {
-  grid-area: part2;
-  width: 100%;
-}
-
-.part3 {
-  grid-area: part3;
   width: 100%;
 }
 
@@ -243,15 +212,6 @@ body main .fotos2 ul li .imgnoso3 {
 body main .fotos2 ul .imgnoso4 {
   width: 300px;
 }
-body main .info3 {
-  color: #000000;
-  font-size: medium;
-  line-height: 2rem;
-}
-body main .info3 span {
-  color: #912525;
-  font-weight: bold;
-}
 
 body main .cajas {
   background-color: #f3e2ca;
@@ -300,104 +260,120 @@ body main .titu {
   text-decoration: underline;
   text-align: center;
 }
-body main .carousel {
+body main .izqui {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main .izqui .caja1 {
+  padding: 10px;
+  align-self: center;
+}
+body main .izqui .caja2 {
+  padding: 10px;
+  align-self: start;
+}
+body main .izqui .caja3 {
+  padding: 10px;
+  align-self: end;
+}
+body main .centr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main .centr .carousel {
   position: sticky;
   top: 0px;
 }
-body main .izqui .caja1 {
-  padding-top: 40px;
-  position: relative;
-  top: 10px;
-  left: 0px;
+body main .dere {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-body main .izqui .caja2 {
-  position: relative;
-  top: 10px;
-  left: 100px;
-}
-body main .izqui .caja3 {
-  padding-top: 60px;
-  position: relative;
-  top: 10px;
-  left: 0px;
-}
-body main .izqui .caja4 {
-  padding-bottom: 40px;
-  position: relative;
-  top: 10px;
-  right: -90px;
-}
-body main .izqui .caja5 {
-  padding-top: 10px;
-  padding-bottom: 0px;
-  position: relative;
-  top: 10px;
-  left: -50px;
-}
-body main .izqui .caja6 {
-  padding-top: 0px;
-  padding-bottom: 30px;
-  position: relative;
-  top: 20px;
-  left: 50px;
-}
-body main .izqui .caja7 {
-  padding-top: 30px;
-  position: relative;
-  top: 10px;
-  right: -20px;
-}
-body main .izqui .caja8 {
+body main .dere .caja4 {
   padding: 10px;
-  position: relative;
-  top: 10px;
-  left: 150px;
+  align-self: center;
 }
-body main .dere .caja9 {
-  padding-top: 40px;
-  position: relative;
-  top: -10px;
-  right: -30px;
-}
-body main .dere .caja10 {
+body main .dere .caja5 {
   padding: 10px;
-  position: relative;
-  top: -10px;
-  right: -100px;
+  align-self: start;
 }
-body main .dere .caja11 {
-  padding: 20px;
-  position: relative;
-  top: 10px;
-  right: -100px;
-}
-body main .dere .caja12 {
-  padding-bottom: 40px;
-  position: relative;
-  top: 10px;
-  right: -200px;
-}
-body main .dere .caja13 {
-  padding-top: 10px;
-  padding-bottom: 0px;
-  position: relative;
-  top: -10px;
-  right: -10px;
-}
-body main .dere .caja14 {
-  padding-top: 0px;
-  padding-bottom: 30px;
-  position: relative;
-  top: -20px;
-  right: -100px;
-}
-body main .dere .caja15 {
-  padding-top: 30px;
-  position: relative;
-  top: -10px;
-  left: 20px;
+body main .dere .caja6 {
+  padding: 15px;
+  align-self: end;
 }
 
+body main h4 {
+  color: #5f1706;
+  margin-left: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: oblique;
+  text-decoration: underline;
+}
+body main .conte-fluid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
+}
+body main .conte-fluid .part1 {
+  padding: 5px;
+  background-color: #f5ddbb;
+  border: #912525 3px solid;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+body main .conte-fluid .part2 {
+  width: auto;
+}
+
+@media screen and (max-width: 780px) {
+  /*index*/
+  .containerG-fluid {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    grid-template-rows: auto;
+    grid-template-areas: "carro1 carro2" "carro3 none";
+  }
+  .carousel-inner {
+    width: 350px;
+  }
+  /*fin de index*/
+  /*nuestros trabajos*/
+  .containertra-fluid {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "titu titu" "izqui centr" "dere centr";
+  }
+  /*Fin de nuestros trabajos*/
+}
+@media screen and (max-width: 425px) {
+  /*index*/
+  .containerG-fluid {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "carro1" "carro2" "carro3";
+  }
+  .carousel-inner {
+    width: 250px;
+    margin: 20px;
+  }
+  /*fin de index*/
+  /*Nuestros trabajos*/
+  .containertra-fluid {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "titu" "izqui" "dere" "centr";
+  }
+  .conte-fluid {
+    flex-direction: column;
+  }
+  /*Fin de nuestros trabajos*/
+}
 * {
   margin: 0;
   padding: 0;

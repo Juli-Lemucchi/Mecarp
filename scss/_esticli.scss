@@ -1,0 +1,33 @@
+@import "variables";
+
+body{
+    main{
+        h4{
+            color: $subtitulos;
+            margin-left: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-style:oblique;
+            text-decoration: underline;
+        }
+        .conte-fluid{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin: 10px;
+            padding: 10px;
+            .part1{
+                padding: 5px;
+                background-color: $footer;
+                border: $titulos 3px solid;
+                border-radius: 10px;
+                justify-content: center;
+                align-items: center;
+            }
+            .part2{
+                width: auto;
+            }
+
+        }
+    }
+}

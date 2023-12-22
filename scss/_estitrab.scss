@@ -13,105 +13,47 @@ body{
             text-decoration: underline;
             text-align: center;
         }
-        .carousel{
-            position: sticky;
-            top: 0px;
-        }
         .izqui{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             .caja1{
-                padding-top: 40px;
-                position: relative;
-                top: 10px;
-                left: 0px;
+                padding: 10px;
+                align-self: center;
             }
             .caja2{
-                position: relative;
-                top: 10px;
-                left:100px;
+                padding: 10px;
+                align-self: start;
             }
             .caja3{
-                padding-top: 60px;
-                position: relative;
-                top: 10px;
-                left: 0px;
-            }
-            .caja4{
-                padding-bottom: 40px;
-                position: relative;
-                top: 10px;
-                right: -90px;
-            }
-            .caja5{
-                padding-top: 10px;
-                padding-bottom: 0px;
-                position: relative;
-                top: 10px;
-                left: -50px;
-            }
-            .caja6{
-                padding-top:0px;
-                padding-bottom: 30px;
-                position: relative;
-                top: 20px;
-                left: 50px;
-            }
-            .caja7{
-                padding-top: 30px;
-                position: relative;
-                top: 10px;
-                right: -20px;
-            }
-            .caja8{
                 padding: 10px;
-                position: relative;
-                top: 10px;
-                left: 150px;
+                align-self:end;
+            }
+        }
+        .centr{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .carousel{
+                position: sticky;
+                top: 0px;
             }
         }
         .dere{
-            .caja9{
-                padding-top: 40px;
-                position: relative;
-                top: -10px;
-                right: -30px;
-            }
-            .caja10{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .caja4{
                 padding: 10px;
-                position: relative;
-                top: -10px;
-                right:-100px;
+                align-self: center;
             }
-            .caja11{
-                padding: 20px;
-                position: relative;
-                top: 10px;
-                right: -100px;
+            .caja5{
+                padding: 10px;
+                align-self: start;
             }
-            .caja12{
-                padding-bottom: 40px;
-                position: relative;
-                top: 10px;
-                right: -200px;
-            }
-            .caja13{
-                padding-top: 10px;
-                padding-bottom: 0px;
-                position: relative;
-                top: -10px;
-                right: -10px;
-            }
-            .caja14{
-                padding-top:0px;
-                padding-bottom: 30px;
-                position: relative;
-                top: -20px;
-                right: -100px;
-            }
-            .caja15{
-                padding-top: 30px;
-                position: relative;
-                top: -10px;
-                left: 20px;
+            .caja6{
+                padding: 15px;
+                align-self:end;
             }
         }
     }

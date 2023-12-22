@@ -1,0 +1,61 @@
+@media screen and (max-width: 780px) {
+    /*index*/
+    .containerG-fluid{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "carro1 carro2"
+        "carro3 none";
+    }
+    .carousel-inner{
+        width: 350px;
+    }
+
+    /*fin de index*/
+    /*nuestros trabajos*/
+    .containertra-fluid{
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "titu titu"
+        "izqui centr"
+        "dere centr";
+        
+     }
+     /*Fin de nuestros trabajos*/
+
+    }
+
+@media screen and (max-width: 425px) {
+    /*index*/
+    .containerG-fluid{
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "carro1"
+        "carro2"
+        "carro3";
+    }
+    .carousel-inner{
+        width: 250px;
+        margin: 20px;
+    }
+    /*fin de index*/
+    /*Nuestros trabajos*/
+     .containertra-fluid{
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "titu"
+        "izqui"
+        "dere"
+        "centr";
+
+     }
+     .conte-fluid{
+        flex-direction: column;
+     }
+    
+    /*Fin de nuestros trabajos*/
+}

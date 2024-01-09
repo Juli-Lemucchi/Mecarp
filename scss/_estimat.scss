@@ -3,7 +3,7 @@ body{
     main{
         
         .cajas{
-            background-color: $body;
+            background-image: $body;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
@@ -12,7 +12,7 @@ body{
                 margin: 20px;
                 width: 300px;
                 height: 350px;
-                background-color: rgb(233, 186, 147);
+                background-image:$mat;
                 border: $titulos 2px solid;
                 border-radius: 20px; 
                 display: flex;

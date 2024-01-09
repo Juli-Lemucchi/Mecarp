@@ -3,10 +3,13 @@ body{
     main{
         .infoPrincipal{
             p{
+            display:flex;
+            justify-content: center;
             margin-left: 10px;
             margin-top: 10px;
             color: $text;
-            font-size: medium;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size:larger;
             line-height: 1;
             
             }
@@ -28,6 +31,10 @@ body{
             justify-content: center;
             color: black;
             font-size:large;
+        }
+        .carousel-inner{
+            border-radius: 5%;
+
         }
         .carro1{
             &:hover{

@@ -12,18 +12,18 @@
 }
 .container-fluid header {
   grid-area: header;
-  background-color: #cda46e;
+  background-image: url(../img/fondogrl.jpeg);
   width: 100%;
 }
 .container-fluid main {
   grid-area: main;
-  background-color: #f3e2ca;
+  background-image: url(../img/fondogeneral.jpeg);
   width: auto;
 }
 .container-fluid footer {
   grid-area: footer;
   width: 100%;
-  background-color: #f5ddbb;
+  background-image: url(../img/fondogrl.jpeg);
 }
 
 /* Contenedor pages nosotros*/
@@ -89,7 +89,7 @@
   width: 100%;
   display: grid;
   grid-auto-columns: 1fr;
-  grid-template-columns: 1fr 0.5fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr auto;
   grid-gap: 0px 0px;
   grid-template-areas: "titu titu titu" "izqui centr dere";
@@ -116,10 +116,13 @@
 }
 
 body main .infoPrincipal p {
+  display: flex;
+  justify-content: center;
   margin-left: 10px;
   margin-top: 10px;
   color: #000000;
-  font-size: medium;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: larger;
   line-height: 1;
 }
 body main h2 {
@@ -137,6 +140,9 @@ body main .linkvermas {
   justify-content: center;
   color: black;
   font-size: large;
+}
+body main .carousel-inner {
+  border-radius: 5%;
 }
 body main .carro1:hover {
   transform: scale(1, 1);
@@ -214,7 +220,7 @@ body main .fotos2 ul .imgnoso4 {
 }
 
 body main .cajas {
-  background-color: #f3e2ca;
+  background-image: url(../img/fondogeneral.jpeg);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -224,7 +230,7 @@ body main .cajas div {
   margin: 20px;
   width: 300px;
   height: 350px;
-  background-color: rgb(233, 186, 147);
+  background-image: url(../img/fondomat.jpeg);
   border: #912525 2px solid;
   border-radius: 20px;
   display: flex;
@@ -321,7 +327,7 @@ body main .conte-fluid {
 }
 body main .conte-fluid .part1 {
   padding: 5px;
-  background-color: #f5ddbb;
+  background-image: url(../img/fondomat.jpeg);
   border: #912525 3px solid;
   border-radius: 10px;
   justify-content: center;
@@ -329,6 +335,9 @@ body main .conte-fluid .part1 {
 }
 body main .conte-fluid .part2 {
   width: auto;
+}
+body main .conte-fluid .part2 img {
+  border-radius: 5%;
 }
 
 @media screen and (max-width: 780px) {

@@ -13,6 +13,7 @@
     box-sizing: border-box;
 }
 body{
+
     header{
         h1{
                 display: flex;
@@ -23,6 +24,7 @@ body{
             }
         }
         .menu{
+            
             ul{
                 display: flex;
                 flex-direction: row;

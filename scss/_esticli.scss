@@ -18,7 +18,7 @@ body{
             padding: 10px;
             .part1{
                 padding: 5px;
-                background-color: $footer;
+                background-image: $mat;
                 border: $titulos 3px solid;
                 border-radius: 10px;
                 justify-content: center;
@@ -26,6 +26,9 @@ body{
             }
             .part2{
                 width: auto;
+                img{
+                    border-radius: 5%;
+                }
             }
 
         }

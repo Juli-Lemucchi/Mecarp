@@ -1,9 +1,7 @@
 @import "variables";
 body{
-    main{
-        
+    main{ 
         .cajas{
-            background-image: $body;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
@@ -28,7 +26,6 @@ body{
                     overflow: auto;
                     &::-webkit-scrollbar{
                         width: 5px;
-                        background-color:rgb(233, 186, 147);
                     }
                     &::-webkit-scrollbar-thumb{
                         background-color: $titulos;

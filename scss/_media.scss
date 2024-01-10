@@ -24,11 +24,30 @@
         
      }
      /*Fin de nuestros trabajos*/
-
+     /*Conocenos*/
+     .container2-fluid{
+        width:100%;
+        height: 100%;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "subtitulo subtitulo"
+        "info1 info2"
+        "fotos1 fotos2";
+     }
+     /*Fin de conocenos*/
     }
 
 @media screen and (max-width: 425px) {
     /*index*/
+    header{
+        .menuC{
+            display: block;
+        }
+        .menu{
+            display: none;
+        }
+    }
     .containerG-fluid{
         grid-template-columns: auto;
         grid-template-rows: auto;
@@ -53,9 +72,26 @@
         "centr";
 
      }
-     .conte-fluid{
-        flex-direction: column;
-     }
-    
     /*Fin de nuestros trabajos*/
+    /*Conocenos*/
+    .container2-fluid{
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "subtitulo"
+        "info1" 
+        "fotos2"
+        "info2" 
+        "fotos1";
+     }
+     /*Fin de conocenos*/
+     /*Clientes
+     .conte-fluid{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "part2" 
+        "part1";
+     }
+     Fin de clientes*/
 }

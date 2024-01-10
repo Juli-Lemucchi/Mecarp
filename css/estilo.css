@@ -1,8 +1,8 @@
 /* contenedor pantalla principal*/
 .container-fluid {
   padding: 0px;
-  height: 100%;
-  width: 100%;
+  height: auto;
+  width: auto;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: auto;
@@ -14,15 +14,18 @@
   grid-area: header;
   background-image: url(../img/fondogrl.jpeg);
   width: 100%;
+  height: 100%;
 }
 .container-fluid main {
   grid-area: main;
   background-image: url(../img/fondogeneral.jpeg);
-  width: auto;
+  width: 100%;
+  height: 100%;
 }
 .container-fluid footer {
   grid-area: footer;
   width: 100%;
+  height: 100%;
   background-image: url(../img/fondogrl.jpeg);
 }
 
@@ -32,7 +35,7 @@
   height: 100%;
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto;
   grid-template-rows: auto;
   grid-auto-flow: row;
   grid-template-areas: "subtitulos subtitulos" "info1 fotos1" "fotos2 info2";
@@ -97,7 +100,7 @@
 
 .titu {
   grid-area: titu;
-  width: 100;
+  width: 100%;
 }
 
 .izqui {
@@ -118,8 +121,7 @@
 body main .infoPrincipal p {
   display: flex;
   justify-content: center;
-  margin-left: 10px;
-  margin-top: 10px;
+  align-items: center;
   color: #000000;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: larger;
@@ -220,7 +222,6 @@ body main .fotos2 ul .imgnoso4 {
 }
 
 body main .cajas {
-  background-image: url(../img/fondogeneral.jpeg);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -248,7 +249,6 @@ body main .cajas div p {
 }
 body main .cajas div p::-webkit-scrollbar {
   width: 5px;
-  background-color: rgb(233, 186, 147);
 }
 body main .cajas div p::-webkit-scrollbar-thumb {
   background-color: #912525;
@@ -258,14 +258,6 @@ body main .cajas div p::-webkit-scrollbar-thumb {
   box-sizing: border-box;
 }
 
-body main .titu {
-  font-size: xx-large;
-  color: #5f1706;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-style: oblique;
-  text-decoration: underline;
-  text-align: center;
-}
 body main .izqui {
   display: flex;
   flex-direction: column;
@@ -311,30 +303,41 @@ body main .dere .caja6 {
 }
 
 body main h4 {
+  display: flex;
+  justify-content: center;
   color: #5f1706;
-  margin-left: 20px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-style: oblique;
   text-decoration: underline;
 }
 body main .conte-fluid {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
   margin: 10px;
   padding: 10px;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "part2 part1";
 }
 body main .conte-fluid .part1 {
+  grid-area: part1;
+  width: 100%;
+  height: 100%;
   padding: 5px;
-  background-image: url(../img/fondomat.jpeg);
+  background-image: url(../img/fondogeneral.jpeg);
   border: #912525 3px solid;
   border-radius: 10px;
   justify-content: center;
   align-items: center;
 }
+body main .conte-fluid .part1 .btn {
+  background-color: #912525;
+  border: #5f1706 3px solid;
+}
 body main .conte-fluid .part2 {
-  width: auto;
+  grid-area: part2;
+  width: 100%;
+  height: 100%;
 }
 body main .conte-fluid .part2 img {
   border-radius: 5%;
@@ -359,9 +362,24 @@ body main .conte-fluid .part2 img {
     grid-template-areas: "titu titu" "izqui centr" "dere centr";
   }
   /*Fin de nuestros trabajos*/
+  /*Conocenos*/
+  .container2-fluid {
+    width: 100%;
+    height: 100%;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "subtitulo subtitulo" "info1 info2" "fotos1 fotos2";
+  }
+  /*Fin de conocenos*/
 }
 @media screen and (max-width: 425px) {
   /*index*/
+  header .menuC {
+    display: block;
+  }
+  header .menu {
+    display: none;
+  }
   .containerG-fluid {
     grid-template-columns: auto;
     grid-template-rows: auto;
@@ -378,10 +396,23 @@ body main .conte-fluid .part2 img {
     grid-template-rows: auto;
     grid-template-areas: "titu" "izqui" "dere" "centr";
   }
-  .conte-fluid {
-    flex-direction: column;
-  }
   /*Fin de nuestros trabajos*/
+  /*Conocenos*/
+  .container2-fluid {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "subtitulo" "info1" "fotos2" "info2" "fotos1";
+  }
+  /*Fin de conocenos*/
+  /*Clientes
+  .conte-fluid{
+     grid-template-columns: 1fr;
+     grid-template-rows: auto;
+     grid-template-areas:
+     "part2" 
+     "part1";
+  }
+  Fin de clientes*/
 }
 * {
   margin: 0;
@@ -396,24 +427,59 @@ body header h1 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin-left: 10px;
 }
-body .menu ul {
+body header .menu ul {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-evenly;
 }
-body .menu ul li {
+body header .menu ul li {
   list-style-type: none;
 }
-body .menu ul li a {
+body header .menu ul li a {
   padding: 10px;
   margin: 2px;
   color: #000000;
 }
-body .menu ul .ubiactual {
+body header .menu ul .ubiactual {
   color: white;
   border-radius: 10px;
   background-color: #5f1706;
+}
+body header .menuC {
+  display: none;
+}
+body header .menuC .dropdown {
+  display: flex;
+  justify-content: end;
+  padding: 10px;
+}
+body header .menuC .dropdown .btn {
+  background-color: #5f1706;
+  color: white;
+}
+body header .menuC .dropdown .dropdown-menu {
+  border: #5f1706 solid 2px;
+  border-radius: 10px;
+}
+body header .menuC .dropdown .dropdown-menu li a {
+  padding: 10px;
+  margin: 10px;
+  line-height: 2.5;
+  color: #000000;
+}
+body header .menuC .dropdown .dropdown-menu li a:hover {
+  color: white;
+  border-radius: 10px;
+  background-color: #5f1706;
+}
+body main .titu {
+  font-size: xx-large;
+  color: #5f1706;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: oblique;
+  text-decoration: underline;
+  text-align: center;
 }
 body main h2 {
   color: #5f1706;
@@ -440,8 +506,18 @@ body footer .contacto .ending .ubiactual {
   border-radius: 10px;
   background-color: #5f1706;
 }
-body footer .contacto .ending ul li {
-  list-style-type: none;
+body footer .contacto .ending .dropdown {
+  display: flex;
+  justify-content: end;
+  padding: 10px;
+}
+body footer .contacto .ending .dropdown .btn {
+  background-color: #5f1706;
+  color: white;
+}
+body footer .contacto .ending .dropdown .dropdown-menu {
+  border: #5f1706 solid 2px;
+  border-radius: 10px;
 }
 body footer .contacto .ending ul li a {
   padding: 10px;

@@ -3,29 +3,43 @@
 body{
     main{
         h4{
+            display: flex;
+            justify-content:center;
             color: $subtitulos;
-            margin-left: 20px;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             font-style:oblique;
             text-decoration: underline;
         }
         .conte-fluid{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
             margin: 10px;
             padding: 10px;
+            height: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+            grid-template-areas:
+            "part2 part1";
+            
             .part1{
+                grid-area: part1;
+                width: 100%;
+                height: 100%;
                 padding: 5px;
-                background-image: $mat;
+                background-image: $body;
                 border: $titulos 3px solid;
                 border-radius: 10px;
                 justify-content: center;
                 align-items: center;
+                .btn{
+                    background-color: $titulos;
+                    border: $subtitulos 3px solid;
+                }
             }
             .part2{
-                width: auto;
+                grid-area: part2;
+                width: 100%;
+                height: 100%;
+
                 img{
                     border-radius: 5%;
                 }

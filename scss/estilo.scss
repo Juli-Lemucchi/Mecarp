@@ -15,6 +15,7 @@
 body{
 
     header{
+        
         h1{
                 display: flex;
                 justify-content: center;
@@ -22,31 +23,71 @@ body{
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
                 margin-left: 10px;
             }
-        }
-        .menu{
-            
-            ul{
-                display: flex;
-                flex-direction: row;
-                flex-wrap: nowrap;
-                justify-content: space-evenly;
-                
-                li {
-                    list-style-type: none ;
-                    a{
-                        padding: 10px;
-                        margin: 2px;
-                        color: $text;
+            .menu{
+                ul{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    justify-content: space-evenly;
+                    
+                    li {
+                        list-style-type: none ;
+                        a{
+                            padding: 10px;
+                            margin: 2px;
+                            color: $text;
+                        }
+                    }
+                    .ubiactual{
+                        color: white;
+                        border-radius:10px;
+                        background-color:$subtitulos;
+                    }
+                }           
+            }
+            .menuC{
+                display: none;
+                .dropdown{
+                    display: flex;
+                    justify-content: end;
+                    padding: 10px;
+                    .btn{
+                        background-color: $subtitulos;
+                        color: white;
+                    }
+                    .dropdown-menu{
+                        border: $subtitulos solid 2px;
+                        border-radius: 10px;
+                        li {
+                            a{
+                                padding: 10px;
+                                margin: 10px;
+                                line-height: 2.5;
+                                color: $text;
+                                &:hover{
+                                    color: white;
+                                    border-radius:10px;
+                                    background-color:$subtitulos;
+                                }
+                            }
+                        }
                     }
                 }
-                .ubiactual{
-                    color: white;
-                    border-radius:10px;
-                    background-color:$subtitulos;
-                }
-            }           
+        
+                    
+            }
         }
+        
+        
     main{
+        .titu{
+            font-size: xx-large;
+            color: $subtitulos;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-style:oblique;
+            text-decoration: underline;
+            text-align: center;
+        }
         h2{
                 color: $subtitulos;
                 margin-left: 20px;
@@ -80,9 +121,23 @@ body{
                     border-radius:10px;
                     background-color:$subtitulos;
                 }
+                .dropdown{
+                    display: flex;
+                    justify-content: end;
+                    padding: 10px;
+                    .btn{
+                        background-color: $subtitulos;
+                        color: white;
+                    }
+                    .dropdown-menu{
+                        border: $subtitulos solid 2px;
+                        border-radius: 10px;
+                    }
+
+
+                }
                 ul{
                     li {
-                        list-style-type: none ;
                         a{
                             padding: 10px;
                             margin: 10px;

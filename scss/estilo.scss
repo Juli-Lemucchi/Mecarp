@@ -27,7 +27,7 @@ body{
                 ul{
                     display: flex;
                     flex-direction: row;
-                    flex-wrap: nowrap;
+                    flex-wrap: nowrap; 
                     justify-content: space-evenly;
                     
                     li {
@@ -49,10 +49,11 @@ body{
                 display: none;
                 .dropdown{
                     display: flex;
-                    justify-content: end;
+                    justify-content:end;
                     padding: 10px;
                     .btn{
-                        background-color: $subtitulos;
+                        background-color: $titulos;
+                        border: $subtitulos 2px solid;
                         color: white;
                     }
                     .dropdown-menu{

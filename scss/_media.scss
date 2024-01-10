@@ -1,5 +1,12 @@
 @media screen and (max-width: 780px) {
     /*index*/
+    .container-fluid{
+        main{
+            .dere{
+                display: none;
+            }
+    }
+}
     .containerG-fluid{
         grid-template-columns: 1fr 1fr;
         grid-gap: 1rem;
@@ -20,34 +27,55 @@
         grid-template-areas:
         "titu titu"
         "izqui centr"
-        "dere centr";
+        "izqui centr";
         
      }
      /*Fin de nuestros trabajos*/
      /*Conocenos*/
      .container2-fluid{
-        width:100%;
-        height: 100%;
+        width:auto;
         grid-template-columns: auto;
         grid-template-rows: auto;
         grid-template-areas: 
         "subtitulo subtitulo"
-        "info1 info2"
-        "fotos1 fotos2";
+        "info1 info1"
+        "info2 info2"
+        "fotos1 fotos1"
+        "fotos2 fotos2";
      }
      /*Fin de conocenos*/
     }
 
 @media screen and (max-width: 425px) {
-    /*index*/
-    header{
-        .menuC{
-            display: block;
+    /*gnrl*/
+    .container-fluid{
+        header{
+            h1{
+                font-size:xx-large;
+            }
+            .menuC{
+                display: block;
+            }
+            .menu{
+                display: none;
+            }
         }
-        .menu{
-            display: none;
+        main{
+            .dere{
+                display: block;
+            }
+            .izqui{
+                display: none;
+            }
+            .fotos1{
+                width: auto;
+            }
+            .fotos2{
+                display: none;
+            }
         }
     }
+    
     .containerG-fluid{
         grid-template-columns: auto;
         grid-template-rows: auto;
@@ -58,7 +86,7 @@
     }
     .carousel-inner{
         width: 250px;
-        margin: 20px;
+
     }
     /*fin de index*/
     /*Nuestros trabajos*/
@@ -67,22 +95,21 @@
         grid-template-rows: auto;
         grid-template-areas:
         "titu"
-        "izqui"
-        "dere"
-        "centr";
+        "centr"
+        "dere";
 
      }
     /*Fin de nuestros trabajos*/
     /*Conocenos*/
     .container2-fluid{
+        width: auto;
         grid-template-columns: auto;
         grid-template-rows: auto;
         grid-template-areas: 
         "subtitulo"
         "info1" 
-        "fotos2"
-        "info2" 
-        "fotos1";
+        "fotos1"
+        "info2";
      }
      /*Fin de conocenos*/
      /*Clientes

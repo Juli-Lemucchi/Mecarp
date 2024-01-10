@@ -345,6 +345,9 @@ body main .conte-fluid .part2 img {
 
 @media screen and (max-width: 780px) {
   /*index*/
+  .container-fluid main .dere {
+    display: none;
+  }
   .containerG-fluid {
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
@@ -359,25 +362,39 @@ body main .conte-fluid .part2 img {
   .containertra-fluid {
     grid-template-columns: auto;
     grid-template-rows: auto;
-    grid-template-areas: "titu titu" "izqui centr" "dere centr";
+    grid-template-areas: "titu titu" "izqui centr" "izqui centr";
   }
   /*Fin de nuestros trabajos*/
   /*Conocenos*/
   .container2-fluid {
-    width: 100%;
-    height: 100%;
+    width: auto;
     grid-template-columns: auto;
     grid-template-rows: auto;
-    grid-template-areas: "subtitulo subtitulo" "info1 info2" "fotos1 fotos2";
+    grid-template-areas: "subtitulo subtitulo" "info1 info1" "info2 info2" "fotos1 fotos1" "fotos2 fotos2";
   }
   /*Fin de conocenos*/
 }
 @media screen and (max-width: 425px) {
-  /*index*/
-  header .menuC {
+  /*gnrl*/
+  .container-fluid header h1 {
+    font-size: xx-large;
+  }
+  .container-fluid header .menuC {
     display: block;
   }
-  header .menu {
+  .container-fluid header .menu {
+    display: none;
+  }
+  .container-fluid main .dere {
+    display: block;
+  }
+  .container-fluid main .izqui {
+    display: none;
+  }
+  .container-fluid main .fotos1 {
+    width: auto;
+  }
+  .container-fluid main .fotos2 {
     display: none;
   }
   .containerG-fluid {
@@ -387,21 +404,21 @@ body main .conte-fluid .part2 img {
   }
   .carousel-inner {
     width: 250px;
-    margin: 20px;
   }
   /*fin de index*/
   /*Nuestros trabajos*/
   .containertra-fluid {
     grid-template-columns: auto;
     grid-template-rows: auto;
-    grid-template-areas: "titu" "izqui" "dere" "centr";
+    grid-template-areas: "titu" "centr" "dere";
   }
   /*Fin de nuestros trabajos*/
   /*Conocenos*/
   .container2-fluid {
+    width: auto;
     grid-template-columns: auto;
     grid-template-rows: auto;
-    grid-template-areas: "subtitulo" "info1" "fotos2" "info2" "fotos1";
+    grid-template-areas: "subtitulo" "info1" "fotos1" "info2";
   }
   /*Fin de conocenos*/
   /*Clientes
@@ -455,7 +472,8 @@ body header .menuC .dropdown {
   padding: 10px;
 }
 body header .menuC .dropdown .btn {
-  background-color: #5f1706;
+  background-color: #912525;
+  border: #5f1706 2px solid;
   color: white;
 }
 body header .menuC .dropdown .dropdown-menu {

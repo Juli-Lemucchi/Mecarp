@@ -2,7 +2,7 @@
 .container-fluid {
   padding: 0px;
   height: auto;
-  width: auto;
+  width: 100%;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: auto;
@@ -14,19 +14,16 @@
   grid-area: header;
   background-image: url(../img/fondogrl.jpeg);
   width: 100%;
-  height: 100%;
 }
 .container-fluid main {
   grid-area: main;
   background-image: url(../img/fondogeneral.jpeg);
   width: 100%;
-  height: 100%;
 }
 .container-fluid footer {
   grid-area: footer;
-  width: 100%;
-  height: 100%;
   background-image: url(../img/fondogrl.jpeg);
+  width: 100%;
 }
 
 /* Contenedor pages nosotros*/
@@ -314,6 +311,7 @@ body main .conte-fluid {
   margin: 10px;
   padding: 10px;
   height: auto;
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
